@@ -1,0 +1,28 @@
+{
+    "name": "Python3.11",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "forwardPorts": [
+        3000,
+        8000
+    ],
+    "remoteUser": "dev",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ],
+    "remoteEnv": {
+        "ENV_FILE_PATH": "/workspace/.env.example"
+    }
+}
