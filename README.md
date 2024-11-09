@@ -1,5 +1,5 @@
 ## Sound Wave Propagation Simulator
-This simulator models sound wave propagation under various environmental conditions, using the Finite Difference Time Domain (FDTD) method. Configurable and precise, the simulator is a powerful tool for analyzing sound behavior based on key variables such as temperature, distance, and type of gaseous medium, with applications in fields such as industrial monitoring and communication technology development.
+This simulator models sound wave propagation under various environmental conditions, using the Finite Difference Time Domain (FDTD) method. Configurable and precise, the simulator is a powerful tool for analyzing sound behavior based on key variables such as temperature, distance, and type of gaseous medium.
 
 ## Technical Overview
 ### FDTD Implementation for Wave Simulation
