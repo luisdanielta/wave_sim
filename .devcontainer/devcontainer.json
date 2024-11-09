@@ -10,7 +10,9 @@
                 "terminal.integrated.shell.linux": "/bin/bash"
             },
             "extensions": [
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
             ]
         }
     },

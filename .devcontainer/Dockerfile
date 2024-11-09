@@ -3,8 +3,9 @@ FROM python:3.11-slim
 USER root
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y python3-pip && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y python3-pip python3-venv && apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install sudo wget nano curl git -y && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 
 ARG USERNAME=dev
 ARG USER_UID=1000
